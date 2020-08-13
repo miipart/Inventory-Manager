@@ -24,3 +24,15 @@ def get_categories():
     collection = db['Category']
     r = collection.find({})
     return r
+
+def add_item(category_id,name="Sample name"):
+    db = __get_db()
+    data = {"name":name, "category_id":category_id}
+    collection = "Item"
+    r = __insert(collection, data)
+
+def get_items(filter={}):
+    db = __get_db()
+    collection = db['Item']
+    r = collection.find(filter)
+    return r

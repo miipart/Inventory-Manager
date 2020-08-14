@@ -1,0 +1,25 @@
+
+nav {
+  padding: 0.5rem;
+  background: #2D3636;
+}
+
+nav div{
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+nav div a {
+  transition: 0.2s;
+  padding:0.5rem;
+  color: #FFFFFC;
+  display: block;
+  text-decoration: none;
+}
+
+nav div a:hover {
+  transition: 0.2s;
+  color: #98CE00;
+  transform: translateY(-20%);
+  text-shadow: 0 0.4rem 2px black;
+}

@@ -17,7 +17,7 @@ def add_category(name="Sample Name. Please change", desc="A sample category. Ple
     data= {"name":name, "desc":desc}
     collection = "Category"
     r = __insert(collection,data)
-    return r
+    return data
 
 def get_categories():
     db = __get_db()
@@ -30,6 +30,7 @@ def add_item(category_id,name="Sample name"):
     data = {"name":name, "category_id":category_id}
     collection = "Item"
     r = __insert(collection, data)
+    return data
 
 def get_items(filter={}):
     db = __get_db()

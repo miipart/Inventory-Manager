@@ -5,7 +5,7 @@ import Item from './Components/item.js'
 import Nav from './Components/nav.js'
 import Items from './Components/items.js'
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
-
+import NewItem from './Components/new_item.js'
 
 class App extends(React.Component) {
 
@@ -30,7 +30,8 @@ class App extends(React.Component) {
           <Nav />
           <Switch>
             <Route path="/" exact render={() => (<Item name="Rock" />)} />
-            <Route path="/items" exact render={() => (<Items item_list={this.state.items}  />)} />
+            <Route path="/items" render={() => (<Items item_list={this.state.items}  />)} />
+            <Route path="/item/new" render={() => (<NewItem items={this.state.items} />)} />
           </Switch>
         </Router>
       </div>

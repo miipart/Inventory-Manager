@@ -17,6 +17,9 @@ export class Nav extends(React.Component){
           <Link to="/items">Items</Link>
         </div>
         <div>
+          <Link to="/item/new">New Item</Link>
+        </div>
+        <div>
           <a>Categories</a>
         </div>
       </nav>

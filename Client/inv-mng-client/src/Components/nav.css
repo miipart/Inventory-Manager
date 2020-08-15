@@ -20,6 +20,6 @@ nav div a {
 nav div a:hover {
   transition: 0.2s;
   color: #98CE00;
-  transform: translateY(-20%);
+  transform: translateY(-5%);
   text-shadow: 0 0.4rem 2px black;
 }

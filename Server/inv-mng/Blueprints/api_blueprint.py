@@ -9,6 +9,11 @@ def RegisterBlueprint(app):
 
     ## TODO: Add auth for API
 
+    @bp.after_request
+    def add_header(response):
+        response.headers['Access-Control-Allow-Origin'] = '*'
+        return response
+
     @bp.route('/test')
     def ApiTest():
         return 'The api route seamse to work'

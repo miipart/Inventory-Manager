@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-#Colors in use
+## Colors in use
 https://coolors.co/6ccff6-2d3636-757780-fffffc-98ce00
 
 ## Available Scripts
